@@ -1,0 +1,29 @@
+permissions for files & directorys
+__________________________________
+
+
+directorys in blue colour indication
+files in wight colour indication
+
+mkdir directory-name 
+touch file-name
+
+full permissions 777 for both files and directorys
+
+for files 644 read only
+
+for directorys 755
+
+sudo chmod 777 name
+
+
+permissions for users
+_____________________
+
+sudo vi /etc/ssh/sshd_config
+password athentiction yes
+                      ___
+
+
+sudo vim /etc/sudoers
+

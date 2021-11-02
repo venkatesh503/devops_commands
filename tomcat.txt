@@ -1,0 +1,20 @@
+403 error
+
+sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml
+ allow=".*" />
+
+
+userid and pw setup
+
+sudo vi /opt/tomcat9/conf/tomcat-users.xml
+
+
+
+<tomcat-users> 
+<role rolename="manager-gui"/> 
+<user username="venkat" password="venkat" roles="manager-gui, manager-script, manager-admin, manager-status"/> 
+</tomcat-users>
+
+
+
+to deply war files in opt tomcat9 webapps

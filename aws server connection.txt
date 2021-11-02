@@ -1,0 +1,7 @@
+through git
+copy the tab-connect ssh-claint id
+open git in key-pair path
+past the ssh-claint id
+yes
+now conected
+

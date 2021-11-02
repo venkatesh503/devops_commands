@@ -1,0 +1,113 @@
+to update
+_________
+
+sudo apt-get update
+
+to install git
+______________
+
+sudo apt-get install git
+git --version
+
+
+lynux directory
+______________
+ 
+mkdir name
+
+rmdir name
+
+rm -rf name
+
+lynux files
+___________
+
+touch name
+
+rm name
+
+copy move rename
+________________
+
+sudo cp file-name destination-path/
+sudo mv file-name destination-path/
+sudo mv file-name new-file-name
+
+uninstall program
+_________________
+
+sudo apt remove name
+
+change server name
+__________________
+
+sudo vi /etc/hostname
+
+sudo reboot
+
+
+opt and home
+____________
+
+pwd - present working dorectory
+ls -l 
+ls -la for hiden files
+ls -lt for time wise files filter
+ls -ltr for reverse
+hystory all hystory
+df -hk all used network
+
+download pakage from web
+________________________
+
+copy link address at web
+sudo wget url    for lynux tar     for windows zip
+sudo tar -xvf file-name to extract
+
+start, stop, restart pakages
+____________________________
+
+sudo service pakage-name status (to know the status)
+sudo service pakage-name start  (to start the pakage)
+sudo service pakage-name stop   (to stop the pakage)
+sudo service pakage-name restart (to restart the pakage)
+
+
+oprt activation
+_______________
+
+
+in aws console secirity
+cliq the link 
+edit inbound rules
+add rulee
+custom tcp     port-number  any-where     save rules
+
+apache port number 80
+https 443
+windows rdp 3389
+jenkins 8080
+
+one-server to another-server data-transfer
+__________________________________________
+
+source-server and destination-server
+
+in source server
+ssh vser@ip  to identify
+
+sudo scp source-file-name user@ip:destinstion-path    copy single file
+sudo scp-r /dorectory/* user@ip:destination-path      copy all files
+
+for permissions sudo chmod 777 directory-name in destination server
+                           755                 for remove permissions 
+
+
+
+down grade and upgrade java
+____________________________
+
+sudo apt-get install openjdk-8-jdk
+
+sudo update-alternatives --config java
+

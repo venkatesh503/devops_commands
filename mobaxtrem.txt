@@ -1,0 +1,5 @@
+public ip  13.126.124.152
+user name ubuntu
+pw key pair
+
+ctrl+r refresh

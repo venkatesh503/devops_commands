@@ -1,0 +1,138 @@
+download docker
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sh get-docker.sh
+
+
+
+add user to docker groop
+
+sudo usermod -aG docker $USER
+              or
+sudo usermod -aG docker venkat
+
+
+
+permisssions for download images
+
+sudo chmod 666 /var/run/docker.sock
+
+
+
+download images
+
+docker pull image name
+
+
+
+sea downloaded images 
+
+docker images
+
+
+
+run docker images with create container
+
+docker run -itd image-name
+
+
+to run docker image with create container and enter into the container
+
+docker run -it image-name
+
+
+back from container 
+
+ctrl+pq
+exit to stop the container and exit
+
+
+
+verify running containers
+
+docker ps
+
+verify stoped containers
+docker ps -a
+
+
+
+enter to running container 
+
+docker attach container id
+
+
+
+
+to stop container
+
+docker stop container-id
+docker start container-id
+docker restart container-id
+
+
+
+
+remove container 
+
+docker rm container-id 
+
+docker rm container-id -f
+
+
+
+to delete images
+
+docker rm image-id
+
+Dockerfile--------pre writen commands
+dockerfile formate
+
+FROM ubuntu
+MAINTAINER venkat
+RUN apt-get update
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get install maven git -y
+RUN apt-get install wget
+RUN cd /opt/ && mkdir project-01
+RUN cd /opt/project-01
+RUN wget link
+RUN tar -xvf tarfile-name
+EXPOSE port-number
+
+
+
+
+docker build -t imagename .
+
+
+
+rename container name
+
+docker rename container-name new-name
+
+
+
+single command for excuit name and port
+
+docker run -itd -p 8080:8080 --name new-name image-id
+
+
+
+docker ps -aq  to quit all containers
+
+docker rm $(docker ps -aq)
+
+
+
+
+backup container
+
+docker commit container-id name
+
+put to docker hub
+
+docker login
+
+
